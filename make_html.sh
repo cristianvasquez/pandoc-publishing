@@ -1,0 +1,1 @@
+docker run --rm -v `pwd`:/data jpbernius/pandoc --bibliography source/references.bib --csl ieee.csl -N -o paper.html --css paper.css --metadata link-citations --template=llncs source/paper.md

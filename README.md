@@ -1,10 +1,14 @@
 # pandoc-publishing
 
-This is an example to generate Latex-based PDFs and HTML from Markdown using Pandoc.
+
+This is an example on how to write documents using Markdown, and then transform them 
+into Latex-based PDFs or HTML using Pandoc.
 
 It uses docker.
 
-usage:
+The contents and references are in the [source](./source) folder
+
+Usage:
 
 Generate html:
 
@@ -23,3 +27,5 @@ Build a pdf from tex:
 ```sh
 docker run --name $(basename $PWD) --rm -v ${PWD}:/data thubo/latexmk -pdf paper.tex && latexmk -c
 ```
+
+This is based on this [example](https://github.com/studentkittens/lncs-pandoc)
